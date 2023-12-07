@@ -1,10 +1,77 @@
 /* Fonts */
 
 /* Main */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    grid-row: 1;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    grid-row: 2;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-rows: 70% 30%;
+    place-content: center;
+}
+
+.gif-container {
+    grid-row: 1;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.gif-controls {
+    grid-row: 2;
+}
+
+.gif-controls button {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.gif-controls button:hover {
+    background-color: burlywood;
+    transition: 0.2s ease-in-out;
+}
 
 /* Footer */
+footer {
+    grid-row: 3;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    place-content: center;
+}
+
 .fa-square-github,
 .fa-square-github:active,
-.fa-square-github:visited {
-    color: black
+.fa-square-github:visited, 
+a {
+    color: white;
+    text-decoration: none;
 }
