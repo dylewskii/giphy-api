@@ -1,4 +1,17 @@
 /* Fonts */
+@font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.ttf");
+}
+
+a, button, div {
+    font-family: "Lato-Regular";
+}
 
 /* Main */
 * {
@@ -22,6 +35,10 @@ header {
     height: 100%;
     display: grid;
     place-content: center;
+}
+
+header > h1 {
+    font-family: "Lato-Black";
 }
 
 main {
