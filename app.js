@@ -1,7 +1,6 @@
-const api = "https://api.giphy.com/v1/gifs/translate?api_key=11111111111&s=cats";
+const api = "https://api.giphy.com/v1/gifs/translate?api_key=cFglNv8p0mK2Nj1UkfGtYkIOOo5bArvt&s=cats";
 const gif = document.getElementById("gif");
 const gifControls = document.querySelector(".gif-controls");
-let currUrl = null;
 
 // Returns GIF Promise
 const getGifData = async () => {
