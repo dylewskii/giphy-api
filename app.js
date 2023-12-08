@@ -23,17 +23,12 @@ getGifData("cats")
 )
 
 // Change GIF source on button click
-nextBtn.addEventListener("click", (e) => {
-    if (searchBox.value){
-        query = searchBox.value;
-    } else {
-        query = "cats";
-    }
+generateBtn.addEventListener("click", (e) => {
+    query = searchBox.value ? searchBox.value : "cats";
 
     getGifData(query)
         .then((d) => {
             gif.src = d.data.images.original.url;
-            console.log(d.data)
         })
         .catch((err) => {
             console.log("Error: ", err);
